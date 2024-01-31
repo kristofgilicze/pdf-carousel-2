@@ -11,8 +11,8 @@ const getPage = (): number => {
 }
 let currentPage = $ref<number>(getPage())
 const zoom = ref<number>(85)
-
-const url = computed(() => `./assets/pages/PP_katalogus_202200815_2-${currentPage}.pdf`);
+// /home/kristofg/pdf-carousel-2/src/assets/pages/42_PP2024.pdf
+const url = computed(() => `./assets/pages/${currentPage}_PP2024.pdf`);
 
 function navLeft() {
   currentPage--;
